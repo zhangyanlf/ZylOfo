@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7909282D1EF6CB1E00C7681D /* MenuController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7909282C1EF6CB1E00C7681D /* MenuController.swift */; };
 		796F2DF01EF686AB00CECCD2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 796F2DEF1EF686AB00CECCD2 /* AppDelegate.swift */; };
 		796F2DF21EF686AB00CECCD2 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 796F2DF11EF686AB00CECCD2 /* ViewController.swift */; };
 		796F2DF51EF686AB00CECCD2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 796F2DF31EF686AB00CECCD2 /* Main.storyboard */; };
@@ -17,6 +18,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		7909282C1EF6CB1E00C7681D /* MenuController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuController.swift; sourceTree = "<group>"; };
 		796F2DEC1EF686AB00CECCD2 /* ZylOfo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ZylOfo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		796F2DEF1EF686AB00CECCD2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		796F2DF11EF686AB00CECCD2 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -61,6 +63,7 @@
 			isa = PBXGroup;
 			children = (
 				796F2DEF1EF686AB00CECCD2 /* AppDelegate.swift */,
+				7909282C1EF6CB1E00C7681D /* MenuController.swift */,
 				796F2DF11EF686AB00CECCD2 /* ViewController.swift */,
 				796F2E041EF6974100CECCD2 /* WebViewController.swift */,
 				796F2DF31EF686AB00CECCD2 /* Main.storyboard */,
@@ -157,6 +160,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7909282D1EF6CB1E00C7681D /* MenuController.swift in Sources */,
 				796F2DF21EF686AB00CECCD2 /* ViewController.swift in Sources */,
 				796F2E051EF6974100CECCD2 /* WebViewController.swift in Sources */,
 				796F2DF01EF686AB00CECCD2 /* AppDelegate.swift in Sources */,
@@ -323,6 +327,7 @@
 				796F2E001EF686AB00CECCD2 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
