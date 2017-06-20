@@ -9,12 +9,12 @@
 /* Begin PBXBuildFile section */
 		7909282D1EF6CB1E00C7681D /* MenuController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7909282C1EF6CB1E00C7681D /* MenuController.swift */; };
 		796F2DF01EF686AB00CECCD2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 796F2DEF1EF686AB00CECCD2 /* AppDelegate.swift */; };
-		796F2DF21EF686AB00CECCD2 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 796F2DF11EF686AB00CECCD2 /* ViewController.swift */; };
 		796F2DF51EF686AB00CECCD2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 796F2DF31EF686AB00CECCD2 /* Main.storyboard */; };
 		796F2DF71EF686AB00CECCD2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 796F2DF61EF686AB00CECCD2 /* Assets.xcassets */; };
 		796F2DFA1EF686AB00CECCD2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 796F2DF81EF686AB00CECCD2 /* LaunchScreen.storyboard */; };
 		796F2E031EF6963400CECCD2 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 796F2E021EF6963400CECCD2 /* MapKit.framework */; };
 		796F2E051EF6974100CECCD2 /* WebViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 796F2E041EF6974100CECCD2 /* WebViewController.swift */; };
+		A48464281EF8BD5F000AC1E4 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A48464271EF8BD5F000AC1E4 /* ViewController.swift */; };
 		F0A291DF483F36642AA05956 /* Pods_ZylOfo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D89676A0F81878BAC1308FE5 /* Pods_ZylOfo.framework */; };
 /* End PBXBuildFile section */
 
@@ -23,7 +23,6 @@
 		7909282C1EF6CB1E00C7681D /* MenuController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuController.swift; sourceTree = "<group>"; };
 		796F2DEC1EF686AB00CECCD2 /* ZylOfo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ZylOfo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		796F2DEF1EF686AB00CECCD2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		796F2DF11EF686AB00CECCD2 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		796F2DF41EF686AB00CECCD2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		796F2DF61EF686AB00CECCD2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		796F2DF91EF686AB00CECCD2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -31,6 +30,7 @@
 		796F2E021EF6963400CECCD2 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 		796F2E041EF6974100CECCD2 /* WebViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WebViewController.swift; sourceTree = "<group>"; };
 		A48464231EF8B2F6000AC1E4 /* ZylOfo-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "ZylOfo-Bridging-Header.h"; sourceTree = "<group>"; };
+		A48464271EF8BD5F000AC1E4 /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		D89676A0F81878BAC1308FE5 /* Pods_ZylOfo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ZylOfo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		DEC9996358B73465AFF93DA3 /* Pods-ZylOfo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ZylOfo.release.xcconfig"; path = "Pods/Target Support Files/Pods-ZylOfo/Pods-ZylOfo.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -71,7 +71,7 @@
 			children = (
 				796F2DEF1EF686AB00CECCD2 /* AppDelegate.swift */,
 				7909282C1EF6CB1E00C7681D /* MenuController.swift */,
-				796F2DF11EF686AB00CECCD2 /* ViewController.swift */,
+				A48464271EF8BD5F000AC1E4 /* ViewController.swift */,
 				796F2E041EF6974100CECCD2 /* WebViewController.swift */,
 				796F2DF31EF686AB00CECCD2 /* Main.storyboard */,
 				796F2DF61EF686AB00CECCD2 /* Assets.xcassets */,
@@ -230,8 +230,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A48464281EF8BD5F000AC1E4 /* ViewController.swift in Sources */,
 				7909282D1EF6CB1E00C7681D /* MenuController.swift in Sources */,
-				796F2DF21EF686AB00CECCD2 /* ViewController.swift in Sources */,
 				796F2E051EF6974100CECCD2 /* WebViewController.swift in Sources */,
 				796F2DF01EF686AB00CECCD2 /* AppDelegate.swift in Sources */,
 			);

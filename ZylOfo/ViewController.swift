@@ -10,7 +10,11 @@ import UIKit
 import SWRevealViewController
 
 class ViewController: UIViewController {
-
+/**按钮试图*/
+    @IBOutlet weak var panelView: UIView!
+    
+    @IBAction func locationClick(_ sender: UIButton) {
+    }
     override func viewDidLoad() {
         super.viewDidLoad()
         

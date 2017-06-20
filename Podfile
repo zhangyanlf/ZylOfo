@@ -7,5 +7,8 @@ target 'ZylOfo' do
 
   # Pods for ZylOfo
 pod 'SWRevealViewController'
-
+pod 'AMap3DMap'
+pod 'AMapSearch'
+pod 'AMapNavi'
+pod 'AMapLocation'
 end
