@@ -1,0 +1,6 @@
+framework module Pods_ZylOfo {
+  umbrella header "Pods-ZylOfo-umbrella.h"
+
+  export *
+  module * { export * }
+}
