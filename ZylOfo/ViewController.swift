@@ -14,6 +14,7 @@ class ViewController: UIViewController,MAMapViewDelegate,AMapSearchDelegate {
     var search : AMapSearchAPI!
     var pin : MyPinAnnotation!
     var pinView : MAAnnotationView!
+    var nearBySearch = true
     
 
     
@@ -74,9 +75,52 @@ class ViewController: UIViewController,MAMapViewDelegate,AMapSearchDelegate {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
+    // MARK: - 大头针动画
+    func pinAnimation() {
+        //坠落效果，y洲加位移
+        let endFrame = pinView.frame
+        
+        pinView.frame = endFrame.offsetBy(dx: 0, dy: -15)
+        UIView.animate(withDuration: 1, delay: 0, usingSpringWithDamping: 0.2, initialSpringVelocity: 0, options: [], animations: { 
+            self.pinView.frame = endFrame
+        }, completion: nil)
+        
+    }
     
     // MARK: - Map View Delegate
     
+    func mapView(_ mapView: MAMapView!, didAddAnnotationViews views: [Any]!) {
+        let aViews = views as! [MAAnnotationView]
+        
+        for aView in aViews {
+            guard aView.annotation is MAPinAnnotationView else {
+                continue
+            }
+            aView.transform = CGAffineTransform(scaleX: 0, y: 0)
+            
+            UIView.animate(withDuration: 0.5, delay: 0, usingSpringWithDamping: 0.3, initialSpringVelocity: 0, options: [], animations: {
+                aView.transform = .identity
+            }, completion: nil)
+        }
+        
+    }
+    
+    /// 用户移动地图的交互
+    ///
+    /// - Parameters:
+    ///   - mapView: mapView
+    ///   - wasUserAction: 用户是否移动
+    func mapView(_ mapView: MAMapView!, mapDidMoveByUser wasUserAction: Bool) {
+        if wasUserAction {
+            pin.isLockedToScreen = true
+            pinAnimation()
+            searchCustomLocation(mapView.centerCoordinate)
+        }
+    }
+    
+    /// 地图初始化完成后
+    ///
+    /// - Parameter mapView: <#mapView description#>
     func mapInitComplete(_ mapView: MAMapView!) {
         pin = MyPinAnnotation()
         pin.coordinate = mapView.centerCoordinate
@@ -156,7 +200,12 @@ class ViewController: UIViewController,MAMapViewDelegate,AMapSearchDelegate {
         }
         
         mapView.addAnnotations(annotations)
-        mapView.showAnnotations(annotations, animated: true)
+        
+        if nearBySearch {
+            mapView.showAnnotations(annotations, animated: true)
+            nearBySearch = !nearBySearch
+        }
+        
         
         
     }
