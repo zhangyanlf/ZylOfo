@@ -151,7 +151,7 @@
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ClK-3g-HpO">
-                                                    <rect key="frame" x="30" y="11.5" width="89.5" height="20.5"/>
+                                                    <rect key="frame" x="30" y="12" width="89.5" height="20.5"/>
                                                     <subviews>
                                                         <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="HomePage_MyStroke" translatesAutoresizingMaskIntoConstraints="NO" id="vSV-Sw-BOv">
                                                             <rect key="frame" x="0.0" y="0.0" width="20" height="20.5"/>
@@ -351,9 +351,6 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="B4J-Gb-axC">
-                                <rect key="frame" x="0.0" y="64" width="375" height="603"/>
-                            </mapView>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="vrR-Kj-Z1T" userLabel="Panel View">
                                 <rect key="frame" x="0.0" y="501" width="375" height="166"/>
                                 <subviews>
@@ -421,14 +418,10 @@
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="B4J-Gb-axC" secondAttribute="bottom" id="4rh-DC-hXD"/>
-                            <constraint firstAttribute="trailing" secondItem="B4J-Gb-axC" secondAttribute="trailing" id="Adq-4l-1aT"/>
                             <constraint firstAttribute="trailing" secondItem="vrR-Kj-Z1T" secondAttribute="trailing" id="FZd-ia-42G"/>
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="vrR-Kj-Z1T" secondAttribute="bottom" id="L5a-Uw-ZB3"/>
                             <constraint firstItem="vrR-Kj-Z1T" firstAttribute="height" secondItem="8bC-Xf-vdC" secondAttribute="height" multiplier="0.25" id="lbd-iL-phq"/>
                             <constraint firstItem="vrR-Kj-Z1T" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="vMi-GK-r1V"/>
-                            <constraint firstItem="B4J-Gb-axC" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="vzH-A6-RXg"/>
-                            <constraint firstItem="B4J-Gb-axC" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="zP9-Eb-XOg"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="eqT-cs-Qtp">

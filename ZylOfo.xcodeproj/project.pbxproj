@@ -15,6 +15,7 @@
 		796F2E031EF6963400CECCD2 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 796F2E021EF6963400CECCD2 /* MapKit.framework */; };
 		796F2E051EF6974100CECCD2 /* WebViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 796F2E041EF6974100CECCD2 /* WebViewController.swift */; };
 		A48464281EF8BD5F000AC1E4 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A48464271EF8BD5F000AC1E4 /* ViewController.swift */; };
+		A484642A1EF90065000AC1E4 /* MyPinannotatiion.swift in Sources */ = {isa = PBXBuildFile; fileRef = A48464291EF90065000AC1E4 /* MyPinannotatiion.swift */; };
 		F0A291DF483F36642AA05956 /* Pods_ZylOfo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D89676A0F81878BAC1308FE5 /* Pods_ZylOfo.framework */; };
 /* End PBXBuildFile section */
 
@@ -31,6 +32,7 @@
 		796F2E041EF6974100CECCD2 /* WebViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WebViewController.swift; sourceTree = "<group>"; };
 		A48464231EF8B2F6000AC1E4 /* ZylOfo-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "ZylOfo-Bridging-Header.h"; sourceTree = "<group>"; };
 		A48464271EF8BD5F000AC1E4 /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		A48464291EF90065000AC1E4 /* MyPinannotatiion.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyPinannotatiion.swift; sourceTree = "<group>"; };
 		D89676A0F81878BAC1308FE5 /* Pods_ZylOfo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ZylOfo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		DEC9996358B73465AFF93DA3 /* Pods-ZylOfo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ZylOfo.release.xcconfig"; path = "Pods/Target Support Files/Pods-ZylOfo/Pods-ZylOfo.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -71,6 +73,7 @@
 			children = (
 				796F2DEF1EF686AB00CECCD2 /* AppDelegate.swift */,
 				7909282C1EF6CB1E00C7681D /* MenuController.swift */,
+				A48464291EF90065000AC1E4 /* MyPinannotatiion.swift */,
 				A48464271EF8BD5F000AC1E4 /* ViewController.swift */,
 				796F2E041EF6974100CECCD2 /* WebViewController.swift */,
 				796F2DF31EF686AB00CECCD2 /* Main.storyboard */,
@@ -233,6 +236,7 @@
 				A48464281EF8BD5F000AC1E4 /* ViewController.swift in Sources */,
 				7909282D1EF6CB1E00C7681D /* MenuController.swift in Sources */,
 				796F2E051EF6974100CECCD2 /* WebViewController.swift in Sources */,
+				A484642A1EF90065000AC1E4 /* MyPinannotatiion.swift in Sources */,
 				796F2DF01EF686AB00CECCD2 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -43,6 +43,10 @@
 		<key>NSAllowsArbitraryLoads</key>
 		<true/>
 	</dict>
+	<key>NSLocationAlwaysUsageDescription</key>
+	<string>小黄车需要一直访问你的位置为你搜索附近车辆、规划合理线路？</string>
+	<key>NSLocationWhenInUseUsageDescription</key>
+	<string>小黄车需要在你使用期间为你搜索附近车辆？</string>
 	<key>UIMainStoryboardFile</key>
 	<string>Main</string>
 	<key>UIRequiredDeviceCapabilities</key>
