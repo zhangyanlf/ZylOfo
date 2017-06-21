@@ -4,6 +4,11 @@
 <dict>
 	<key>SchemeUserState</key>
 	<dict>
+		<key>FTIndicator.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
 		<key>Pods-ZylOfo.xcscheme</key>
 		<dict>
 			<key>isShown</key>
@@ -17,12 +22,17 @@
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
-		<key>5A6B4815254DB6D68E3049EBC3EDA62A</key>
+		<key>4D9CE2C0C1CE88E3E00CFFEC5EEDD2EF</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>72413069A5D4A96F1E71423C8B70E203</key>
+		<key>8EC41FFF60F7A6E48F672204D8DB84FA</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>A84DA1D502917E8956383E16DCBDC7CD</key>
 		<dict>
 			<key>primary</key>
 			<true/>

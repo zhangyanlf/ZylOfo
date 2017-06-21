@@ -11,4 +11,6 @@ pod 'AMap3DMap'
 pod 'AMapSearch'
 pod 'AMapNavi'
 pod 'AMapLocation'
+pod 'FTIndicator'
+
 end

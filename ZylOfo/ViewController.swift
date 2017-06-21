@@ -8,21 +8,25 @@
 
 import UIKit
 import SWRevealViewController
+import FTIndicator
 
-class ViewController: UIViewController,MAMapViewDelegate,AMapSearchDelegate {
+class ViewController: UIViewController,MAMapViewDelegate,AMapSearchDelegate,AMapNaviWalkManagerDelegate {
     var mapView : MAMapView!
     var search : AMapSearchAPI!
     var pin : MyPinAnnotation!
     var pinView : MAAnnotationView!
     var nearBySearch = true
+    var start, end : CLLocationCoordinate2D!
+    var walkManager : AMapNaviWalkManager!
     
 
     
     
-/**按钮试图*/
+    /**按钮试图*/
     @IBOutlet weak var panelView: UIView!
-    
+    /**点击定位搜索黄车*/
     @IBAction func locationClick(_ sender: UIButton) {
+        nearBySearch = true
         searchBikeNearBy()
     }
     //搜索附近车辆
@@ -55,6 +59,9 @@ class ViewController: UIViewController,MAMapViewDelegate,AMapSearchDelegate {
         search = AMapSearchAPI()
         search.delegate = self
         
+        walkManager = AMapNaviWalkManager()
+        walkManager.delegate = self
+        
         // Do any additional setup after loading the view, typically from a nib.
         self.navigationItem.titleView = UIImageView(image: #imageLiteral(resourceName: "ofoLogo"))
         self.navigationItem.leftBarButtonItem?.image = #imageLiteral(resourceName: "leftTopImage").withRenderingMode(.alwaysOriginal)
@@ -81,6 +88,7 @@ class ViewController: UIViewController,MAMapViewDelegate,AMapSearchDelegate {
         let endFrame = pinView.frame
         
         pinView.frame = endFrame.offsetBy(dx: 0, dy: -15)
+        //添加动画
         UIView.animate(withDuration: 1, delay: 0, usingSpringWithDamping: 0.2, initialSpringVelocity: 0, options: [], animations: { 
             self.pinView.frame = endFrame
         }, completion: nil)
@@ -88,6 +96,34 @@ class ViewController: UIViewController,MAMapViewDelegate,AMapSearchDelegate {
     }
     
     // MARK: - Map View Delegate
+    func mapView(_ mapView: MAMapView!, rendererFor overlay: MAOverlay!) -> MAOverlayRenderer! {
+        if overlay is MAPolyline {
+            pin.isLockedToScreen = false
+            mapView.visibleMapRect = overlay.boundingMapRect
+            
+            let renderer : MAPolylineRenderer = MAPolylineRenderer(overlay: overlay)
+            renderer.lineWidth = 8.0
+            renderer.strokeColor = UIColor.orange
+            
+            return renderer
+        }
+        
+        return nil
+    }
+    
+    func mapView(_ mapView: MAMapView!, didSelect view: MAAnnotationView!) {
+        print("点击了")
+        
+        start = pin.coordinate
+        end = view.annotation.coordinate
+        
+        let startPoint = AMapNaviPoint.location(withLatitude: CGFloat(start.latitude), longitude: CGFloat(start.longitude))!
+         let endPoint = AMapNaviPoint.location(withLatitude: CGFloat(end.latitude), longitude: CGFloat(end.longitude))!
+        
+        walkManager.calculateWalkRoute(withStart: [startPoint], end: [endPoint])
+        
+        
+    }
     
     func mapView(_ mapView: MAMapView!, didAddAnnotationViews views: [Any]!) {
         let aViews = views as! [MAAnnotationView]
@@ -97,7 +133,7 @@ class ViewController: UIViewController,MAMapViewDelegate,AMapSearchDelegate {
                 continue
             }
             aView.transform = CGAffineTransform(scaleX: 0, y: 0)
-            
+            //添加动画
             UIView.animate(withDuration: 0.5, delay: 0, usingSpringWithDamping: 0.3, initialSpringVelocity: 0, options: [], animations: {
                 aView.transform = .identity
             }, completion: nil)
@@ -128,6 +164,8 @@ class ViewController: UIViewController,MAMapViewDelegate,AMapSearchDelegate {
         pin.isLockedToScreen = true
         mapView.addAnnotation(pin)
         mapView.showAnnotations([pin], animated: true)
+        
+        searchBikeNearBy()
     }
     
     
@@ -143,10 +181,10 @@ class ViewController: UIViewController,MAMapViewDelegate,AMapSearchDelegate {
             return nil
         }
         if annotation is MyPinAnnotation {
-            let reuseid = "anchor"
-            var av = mapView.dequeueReusableAnnotationView(withIdentifier: reuseid)
+            let userReuseid = "anchor"
+            var av = mapView.dequeueReusableAnnotationView(withIdentifier: userReuseid)
             if av == nil {
-                av = MAPinAnnotationView(annotation: annotation, reuseIdentifier: reuseid)
+                av = MAPinAnnotationView(annotation: annotation, reuseIdentifier: userReuseid)
             }
             av?.image = #imageLiteral(resourceName: "homePage_wholeAnchor")
             av?.canShowCallout = true
@@ -209,6 +247,40 @@ class ViewController: UIViewController,MAMapViewDelegate,AMapSearchDelegate {
         
         
     }
+    
+    // MARK: AMapNaviWalkManager Delegate 导航代理
+    func walkManager(onCalculateRouteSuccess walkManager: AMapNaviWalkManager) {
+        print("步行路线规划中")
+        mapView.removeOverlays(mapView.overlays)
+        var coordinates = walkManager.naviRoute!.routeCoordinates!.map {
+            return CLLocationCoordinate2D(latitude: CLLocationDegrees($0.latitude), longitude: CLLocationDegrees($0.longitude))
+        }
+        
+        let polyLine = MAPolyline(coordinates: &coordinates, count: UInt(coordinates.count))
+        
+        mapView.add(polyLine)
+        
+        //提示距离及用时
+        let walkMinute = walkManager.naviRoute!.routeTime / 60
+        var timeDesc = "1分钟以内"
+        if walkMinute > 0 {
+            timeDesc = walkMinute.description + "分钟"
+        }
+        
+        let hintTitle = "步行" + timeDesc
+        let hintSubTitle = "距离" + walkManager.naviRoute!.routeLength.description + "米"
+//        let ac = UIAlertController(title: hintTitle, message: hintSubTitle, preferredStyle:.alert)
+//        let action = UIAlertAction(title: "ok", style: .default, handler: nil)
+//        ac.addAction(action)
+//        self.present(ac, animated: true, completion: nil)
+        FTIndicator.setIndicatorStyle(.dark)
+        FTIndicator.showNotification(with: #imageLiteral(resourceName: "clock"), title: hintTitle, message: hintSubTitle)
+        
+        
+        
+        
+    }
+    
 
 
 }
