@@ -352,13 +352,13 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="vrR-Kj-Z1T" userLabel="Panel View">
-                                <rect key="frame" x="0.0" y="501" width="375" height="166"/>
+                                <rect key="frame" x="0.0" y="500.5" width="375" height="166.5"/>
                                 <subviews>
                                     <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="whiteImage" translatesAutoresizingMaskIntoConstraints="NO" id="c9Y-0t-8SJ">
-                                        <rect key="frame" x="0.0" y="0.0" width="375" height="166"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="375" height="166.5"/>
                                     </imageView>
                                     <stackView opaque="NO" contentMode="scaleToFill" distribution="equalSpacing" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="pAE-XQ-pou">
-                                        <rect key="frame" x="30" y="0.0" width="315" height="166"/>
+                                        <rect key="frame" x="30" y="0.0" width="315" height="166.5"/>
                                         <subviews>
                                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="wxN-vW-JkS">
                                                 <rect key="frame" x="0.0" y="46" width="60" height="74.5"/>
@@ -379,7 +379,7 @@
                                                 </subviews>
                                             </stackView>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6Cp-Dd-2pG">
-                                                <rect key="frame" x="107.5" y="33" width="100" height="100"/>
+                                                <rect key="frame" x="107.5" y="33.5" width="100" height="100"/>
                                                 <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
                                                 <state key="normal" title="立即用车" backgroundImage="HomePage_UseBike_h">
                                                     <color key="titleColor" red="1" green="1" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
@@ -456,23 +456,23 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="dRJ-MX-kcA">
-                                <rect key="frame" x="0.0" y="534" width="375" height="133"/>
+                                <rect key="frame" x="0.0" y="533.5" width="375" height="133.5"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" distribution="fillProportionally" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="cM0-zZ-zXB">
-                                        <rect key="frame" x="0.0" y="0.0" width="375" height="133"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="375" height="133.5"/>
                                         <subviews>
                                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="2Jy-yR-AXO">
                                                 <rect key="frame" x="0.0" y="37" width="233" height="59.5"/>
                                                 <subviews>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RYy-aq-dKK">
-                                                        <rect key="frame" x="94" y="0.5" width="45" height="45"/>
+                                                        <rect key="frame" x="94" y="0.0" width="45" height="45"/>
                                                         <state key="normal" image="inputBlikeNo"/>
                                                         <connections>
                                                             <segue destination="O4K-Mw-y4d" kind="show" id="I2c-K5-Kcy"/>
                                                         </connections>
                                                     </button>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="手动输入车牌" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kl7-Cc-dR5">
-                                                        <rect key="frame" x="79.5" y="45.5" width="74" height="14.5"/>
+                                                        <rect key="frame" x="79.5" y="45" width="74" height="14.5"/>
                                                         <fontDescription key="fontDescription" style="UICTFontTextStyleCaption1"/>
                                                         <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                         <nil key="highlightedColor"/>
@@ -483,14 +483,14 @@
                                                 <rect key="frame" x="233" y="37" width="142" height="59.5"/>
                                                 <subviews>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GFD-po-z1P">
-                                                        <rect key="frame" x="48.5" y="0.5" width="45" height="45"/>
+                                                        <rect key="frame" x="48.5" y="0.0" width="45" height="45"/>
                                                         <state key="normal" image="btn_unenableTorch_w"/>
                                                         <connections>
                                                             <action selector="flashBtnTap:" destination="mh6-WV-qVC" eventType="touchUpInside" id="4QB-Kw-yA2"/>
                                                         </connections>
                                                     </button>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="手电筒" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9MD-DX-Wu9">
-                                                        <rect key="frame" x="52.5" y="45.5" width="37" height="14.5"/>
+                                                        <rect key="frame" x="52.5" y="45" width="37" height="14.5"/>
                                                         <fontDescription key="fontDescription" style="UICTFontTextStyleCaption1"/>
                                                         <color key="textColor" cocoaTouchSystemColor="tableCellGroupedBackgroundColor"/>
                                                         <nil key="highlightedColor"/>
@@ -551,7 +551,7 @@
                                                 <rect key="frame" x="0.0" y="0.0" width="265" height="50"/>
                                                 <nil key="textColor"/>
                                                 <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="28"/>
-                                                <textInputTraits key="textInputTraits"/>
+                                                <textInputTraits key="textInputTraits" keyboardType="numberPad" returnKeyType="go"/>
                                             </textField>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Lqm-VL-nfk">
                                                 <rect key="frame" x="269" y="0.0" width="50" height="50"/>
@@ -560,6 +560,9 @@
                                                     <constraint firstAttribute="height" constant="50" id="chB-9c-eoz"/>
                                                 </constraints>
                                                 <state key="normal" image="nextArrow_unenable"/>
+                                                <connections>
+                                                    <segue destination="lm1-V4-yAf" kind="modal" identifier="showPassSode" modalTransitionStyle="flipHorizontal" id="9DP-Gn-tQb"/>
+                                                </connections>
                                             </button>
                                         </subviews>
                                     </stackView>
@@ -647,13 +650,14 @@
                     </view>
                     <connections>
                         <outlet property="flashBtn" destination="md4-cq-Jbj" id="Zg5-rZ-c3e"/>
+                        <outlet property="goButton" destination="Lqm-VL-nfk" id="urq-LF-qpw"/>
                         <outlet property="inPutTextFlied" destination="iqJ-iR-wBu" id="AVo-Aq-OxS"/>
                         <outlet property="voiceBtn" destination="ae6-5W-F6I" id="v0w-7L-2gO"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="RRG-Zi-x9b" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2838" y="-386"/>
+            <point key="canvasLocation" x="2863" y="-338"/>
         </scene>
         <!--Web View Controller-->
         <scene sceneID="sId-jJ-xzJ">
@@ -721,6 +725,246 @@
             </objects>
             <point key="canvasLocation" x="1489" y="-117"/>
         </scene>
+        <!--Show Pass Code View Controller-->
+        <scene sceneID="2z7-Oq-ZtE">
+            <objects>
+                <viewController id="lm1-V4-yAf" customClass="ShowPassCodeViewController" customModule="ZylOfo" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="RW4-bH-5Q9"/>
+                        <viewControllerLayoutGuide type="bottom" id="1NB-DP-4cB"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="RTi-5N-UTV">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <navigationBar contentMode="scaleToFill" barStyle="black" translucent="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Vae-Ta-Ep0">
+                                <rect key="frame" x="0.0" y="22" width="375" height="44"/>
+                                <color key="barTintColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                                <textAttributes key="titleTextAttributes">
+                                    <color key="textColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                </textAttributes>
+                                <items>
+                                    <navigationItem title="车辆解锁" id="WT9-Wp-w7k"/>
+                                </items>
+                            </navigationBar>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="3qM-w1-5az">
+                                <rect key="frame" x="8" y="66" width="359" height="300"/>
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="smartLock" translatesAutoresizingMaskIntoConstraints="NO" id="wu8-TT-97a">
+                                        <rect key="frame" x="10" y="0.0" width="339" height="135"/>
+                                    </imageView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="24" translatesAutoresizingMaskIntoConstraints="NO" id="DnQ-Rn-uvQ">
+                                        <rect key="frame" x="20" y="174.5" width="319" height="50"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="5" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hWW-rC-4Ix" customClass="MyPreviewLabel" customModule="ZylOfo" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="0.0" width="62" height="50"/>
+                                                <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="40"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                                        <real key="value" value="2"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                                        <color key="value" red="1" green="1" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                        <real key="value" value="10"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="5" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XcG-fY-Vn6" customClass="MyPreviewLabel" customModule="ZylOfo" customModuleProvider="target">
+                                                <rect key="frame" x="86" y="0.0" width="61.5" height="50"/>
+                                                <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="40"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                                        <real key="value" value="2"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                                        <color key="value" red="1" green="1" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                        <real key="value" value="10"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="5" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="e1P-PT-tpL" customClass="MyPreviewLabel" customModule="ZylOfo" customModuleProvider="target">
+                                                <rect key="frame" x="171.5" y="0.0" width="62" height="50"/>
+                                                <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="40"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                                        <real key="value" value="2"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                                        <color key="value" red="1" green="1" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                        <real key="value" value="10"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="5" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Zhl-JF-Y1P" customClass="MyPreviewLabel" customModule="ZylOfo" customModuleProvider="target">
+                                                <rect key="frame" x="257.5" y="0.0" width="61.5" height="50"/>
+                                                <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="40"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                                        <real key="value" value="2"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                                        <color key="value" red="1" green="1" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                        <real key="value" value="10"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                            </label>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="50" id="7P4-h0-vjw"/>
+                                        </constraints>
+                                    </stackView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="骑行结束后，记得在手机上结束行程" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XHZ-Id-Aac">
+                                        <rect key="frame" x="81.5" y="275.5" width="196.5" height="14.5"/>
+                                        <fontDescription key="fontDescription" style="UICTFontTextStyleCaption1"/>
+                                        <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="车牌号：568252455的解锁码" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="y60-9f-HYO">
+                                        <rect key="frame" x="71.5" y="135" width="217.5" height="19.5"/>
+                                        <fontDescription key="fontDescription" style="UICTFontTextStyleCallout"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="string" keyPath="layer.cornerRadius" value="5"/>
+                                            <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
+                                        </userDefinedRuntimeAttributes>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="DnQ-Rn-uvQ" secondAttribute="trailing" constant="20" id="14L-XO-77S"/>
+                                    <constraint firstItem="DnQ-Rn-uvQ" firstAttribute="top" secondItem="y60-9f-HYO" secondAttribute="bottom" constant="20" id="2ON-lh-an3"/>
+                                    <constraint firstItem="wu8-TT-97a" firstAttribute="leading" secondItem="3qM-w1-5az" secondAttribute="leading" constant="10" id="8SC-Un-jCv"/>
+                                    <constraint firstItem="wu8-TT-97a" firstAttribute="top" secondItem="3qM-w1-5az" secondAttribute="top" id="GUm-WD-3Xz"/>
+                                    <constraint firstAttribute="trailing" secondItem="wu8-TT-97a" secondAttribute="trailing" constant="10" id="Jbr-SH-Mib"/>
+                                    <constraint firstItem="y60-9f-HYO" firstAttribute="centerX" secondItem="3qM-w1-5az" secondAttribute="centerX" id="OHL-Yq-pCP"/>
+                                    <constraint firstItem="DnQ-Rn-uvQ" firstAttribute="leading" secondItem="3qM-w1-5az" secondAttribute="leading" constant="20" id="V8h-Fv-Xf6"/>
+                                    <constraint firstItem="DnQ-Rn-uvQ" firstAttribute="centerX" secondItem="3qM-w1-5az" secondAttribute="centerX" id="bAv-cF-MKL"/>
+                                    <constraint firstAttribute="bottom" secondItem="XHZ-Id-Aac" secondAttribute="bottom" constant="10" id="csf-l4-z0N"/>
+                                    <constraint firstItem="XHZ-Id-Aac" firstAttribute="centerX" secondItem="3qM-w1-5az" secondAttribute="centerX" id="dNg-2c-vKK"/>
+                                    <constraint firstItem="y60-9f-HYO" firstAttribute="top" secondItem="wu8-TT-97a" secondAttribute="bottom" id="uLI-Ta-T3z"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="size" keyPath="layer.shadowOffset">
+                                        <size key="value" width="0.0" height="0.0"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.shadowRadius">
+                                        <integer key="value" value="3"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.shadowOpacity">
+                                        <real key="value" value="0.5"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                            <stackView opaque="NO" contentMode="scaleToFill" distribution="equalSpacing" translatesAutoresizingMaskIntoConstraints="NO" id="GrF-6g-qNa">
+                                <rect key="frame" x="98" y="374" width="180" height="72"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mB7-fv-vhz">
+                                        <rect key="frame" x="0.0" y="0.0" width="45" height="72"/>
+                                        <state key="normal" image="btn_unenableTorch"/>
+                                        <connections>
+                                            <action selector="touchBtnTap:" destination="lm1-V4-yAf" eventType="touchUpInside" id="zna-7I-6bz"/>
+                                        </connections>
+                                    </button>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="La7-qt-3Ws">
+                                        <rect key="frame" x="89.5" y="0.0" width="1" height="72"/>
+                                        <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="1" id="vkc-IT-Ruh"/>
+                                        </constraints>
+                                    </view>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="I0t-Cx-J9I">
+                                        <rect key="frame" x="135" y="0.0" width="45" height="72"/>
+                                        <state key="normal" image="voiceopen"/>
+                                        <connections>
+                                            <action selector="voiceBtnTap:" destination="lm1-V4-yAf" eventType="touchUpInside" id="vwH-r3-rXX"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="lsb-5A-oMI">
+                                <rect key="frame" x="89.5" y="599" width="196.5" height="48"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Eth-1K-l8D">
+                                        <rect key="frame" x="0.0" y="0.0" width="196.5" height="18"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="000" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Nf1-fl-XUi">
+                                                <rect key="frame" x="0.0" y="0.0" width="28" height="18"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="后开始计费，请检查车辆" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4bp-BM-Eeb">
+                                                <rect key="frame" x="28" y="0.0" width="168.5" height="18"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ehb-Dk-pbW">
+                                        <rect key="frame" x="29" y="18" width="138.5" height="30"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="如有问题，" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5le-eP-UpE">
+                                                <rect key="frame" x="0.0" y="0.0" width="76.5" height="30"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="12y-Ky-w8f">
+                                                <rect key="frame" x="76.5" y="0.0" width="62" height="30"/>
+                                                <state key="normal" title="立即报修"/>
+                                                <connections>
+                                                    <action selector="reportBtnTap:" destination="lm1-V4-yAf" eventType="touchUpInside" id="erf-UK-BvX"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="GrF-6g-qNa" firstAttribute="centerX" secondItem="RTi-5N-UTV" secondAttribute="centerX" id="1OF-7n-l3c"/>
+                            <constraint firstItem="1NB-DP-4cB" firstAttribute="top" secondItem="lsb-5A-oMI" secondAttribute="bottom" constant="20" id="6Vi-Zj-V5u"/>
+                            <constraint firstItem="Vae-Ta-Ep0" firstAttribute="leading" secondItem="RTi-5N-UTV" secondAttribute="leading" id="H4f-Bd-Xab"/>
+                            <constraint firstItem="GrF-6g-qNa" firstAttribute="top" secondItem="3qM-w1-5az" secondAttribute="bottom" constant="8" id="OqN-So-HKv"/>
+                            <constraint firstItem="3qM-w1-5az" firstAttribute="leading" secondItem="RTi-5N-UTV" secondAttribute="leading" constant="8" id="aXE-O9-B5B"/>
+                            <constraint firstItem="GrF-6g-qNa" firstAttribute="width" secondItem="3qM-w1-5az" secondAttribute="width" multiplier="0.5" id="amL-pT-BPB"/>
+                            <constraint firstItem="3qM-w1-5az" firstAttribute="height" secondItem="RTi-5N-UTV" secondAttribute="height" multiplier="0.45" id="haL-jN-aMS"/>
+                            <constraint firstItem="Vae-Ta-Ep0" firstAttribute="top" secondItem="RTi-5N-UTV" secondAttribute="top" constant="22" id="pFI-9P-Mg3"/>
+                            <constraint firstAttribute="trailing" secondItem="Vae-Ta-Ep0" secondAttribute="trailing" id="q4D-QG-For"/>
+                            <constraint firstAttribute="trailing" secondItem="3qM-w1-5az" secondAttribute="trailing" constant="8" id="sNw-y0-2ye"/>
+                            <constraint firstItem="3qM-w1-5az" firstAttribute="top" secondItem="Vae-Ta-Ep0" secondAttribute="bottom" id="trI-Vr-uOz"/>
+                            <constraint firstItem="lsb-5A-oMI" firstAttribute="centerX" secondItem="RTi-5N-UTV" secondAttribute="centerX" id="yOv-ve-wjj"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="countDownLabel" destination="Nf1-fl-XUi" id="s6c-Kp-xMJ"/>
+                        <outlet property="touchBtn" destination="mB7-fv-vhz" id="qxR-vH-5Ff"/>
+                        <outlet property="voiceBtn" destination="I0t-Cx-J9I" id="KwM-5j-CxD"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="rBX-3C-nMX" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3828" y="-339"/>
+        </scene>
     </scenes>
     <resources>
         <image name="GrayCerTification_homePage" width="13" height="9"/>
@@ -740,6 +984,7 @@
         <image name="leftBottomImage" width="60" height="60"/>
         <image name="nextArrow_unenable" width="25" height="19"/>
         <image name="rightBottomImage" width="60" height="60"/>
+        <image name="smartLock" width="340" height="135"/>
         <image name="voiceopen" width="45" height="45"/>
         <image name="whiteImage" width="375" height="263"/>
     </resources>

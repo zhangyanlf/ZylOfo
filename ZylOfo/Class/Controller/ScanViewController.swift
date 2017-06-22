@@ -9,6 +9,7 @@
 import UIKit
 import swiftScan
 import FTIndicator
+import SwiftySound
 
 class ScanViewController: LBXScanViewController {
     var isFlashOn = false
@@ -44,7 +45,7 @@ class ScanViewController: LBXScanViewController {
         
         scanStyle = style
         
-
+        Sound.play(file: "上车前_D.m4a")
         
     }
     override func viewDidAppear(_ animated: Bool) {
@@ -56,6 +57,8 @@ class ScanViewController: LBXScanViewController {
         super.viewWillDisappear(animated)
         navigationController?.navigationBar.barStyle = .default
         navigationController?.navigationBar.tintColor = UIColor.black
+        
+        navigationItem.backBarButtonItem = UIBarButtonItem(title: "", style: .plain, target: nil, action: nil)
     }
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()

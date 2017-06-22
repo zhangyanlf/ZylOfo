@@ -13,5 +13,8 @@ pod 'AMapNavi'
 pod 'AMapLocation'
 pod 'FTIndicator'
 pod 'swiftScan'
+pod 'APNumberPad'
+pod 'SwiftyTimer'
+pod 'SwiftySound'
 
 end
