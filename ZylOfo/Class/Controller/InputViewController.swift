@@ -64,14 +64,14 @@ class InputViewController: UIViewController,APNumberPadDelegate,UITextFieldDeleg
         
         goButton.isUserInteractionEnabled = false
         
-//        let isVoiceOn = voiceBtnStatus(voiceBtn: voiceBtn, soundFile: "上车前_LH.m4a")
-//        self.isVoiceOn = isVoiceOn
+        let isVoiceOn = voiceBtnStatus(voiceBtn: voiceBtn, soundFile: "上车前_LH.m4a")
+        self.isVoiceOn = isVoiceOn
         //Sound.play(file: "上车前_LH.m4a")
     }
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
-        let isVoiceOn = voiceBtnStatus(voiceBtn: voiceBtn, soundFile: "上车前_LH.m4a")
+        let isVoiceOn = voiceBtnStatus(voiceBtn: voiceBtn, soundFile: "")
         self.isVoiceOn = isVoiceOn
     }
     func backToScan() {

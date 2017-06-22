@@ -13,7 +13,7 @@ import SwiftySound
 
 class ScanViewController: LBXScanViewController {
     var isFlashOn = false
-    
+    let defaults = UserDefaults.standard
 
     @IBOutlet weak var panelView: UIView!
     
@@ -44,8 +44,10 @@ class ScanViewController: LBXScanViewController {
         style.animationImage = UIImage(named: "CodeScan.bundle/qrcode_scan_part_net")
         
         scanStyle = style
+        if defaults.bool(forKey: "isVoiceOn") {
+            Sound.play(file: "上车前_D.m4a")
+        }
         
-        Sound.play(file: "上车前_D.m4a")
         
     }
     override func viewDidAppear(_ animated: Bool) {
