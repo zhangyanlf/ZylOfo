@@ -14,6 +14,10 @@
 		796F2DFA1EF686AB00CECCD2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 796F2DF81EF686AB00CECCD2 /* LaunchScreen.storyboard */; };
 		796F2E031EF6963400CECCD2 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 796F2E021EF6963400CECCD2 /* MapKit.framework */; };
 		796F2E051EF6974100CECCD2 /* WebViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 796F2E041EF6974100CECCD2 /* WebViewController.swift */; };
+		A469FF5A1EFA4F700089C580 /* ScanViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A469FF591EFA4F700089C580 /* ScanViewController.swift */; };
+		A469FF5C1EFA56CC0089C580 /* CodeScan.bundle in Resources */ = {isa = PBXBuildFile; fileRef = A469FF5B1EFA56CC0089C580 /* CodeScan.bundle */; };
+		A469FF5E1EFA6DBB0089C580 /* InputViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A469FF5D1EFA6DBB0089C580 /* InputViewController.swift */; };
+		A469FF601EFA6EF20089C580 /* ColorHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = A469FF5F1EFA6EF20089C580 /* ColorHelper.swift */; };
 		A48464281EF8BD5F000AC1E4 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A48464271EF8BD5F000AC1E4 /* ViewController.swift */; };
 		A484642A1EF90065000AC1E4 /* MyPinannotatiion.swift in Sources */ = {isa = PBXBuildFile; fileRef = A48464291EF90065000AC1E4 /* MyPinannotatiion.swift */; };
 		F0A291DF483F36642AA05956 /* Pods_ZylOfo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D89676A0F81878BAC1308FE5 /* Pods_ZylOfo.framework */; };
@@ -30,6 +34,10 @@
 		796F2DFB1EF686AB00CECCD2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		796F2E021EF6963400CECCD2 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 		796F2E041EF6974100CECCD2 /* WebViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WebViewController.swift; sourceTree = "<group>"; };
+		A469FF591EFA4F700089C580 /* ScanViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ScanViewController.swift; sourceTree = "<group>"; };
+		A469FF5B1EFA56CC0089C580 /* CodeScan.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = CodeScan.bundle; sourceTree = "<group>"; };
+		A469FF5D1EFA6DBB0089C580 /* InputViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InputViewController.swift; sourceTree = "<group>"; };
+		A469FF5F1EFA6EF20089C580 /* ColorHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ColorHelper.swift; sourceTree = "<group>"; };
 		A48464231EF8B2F6000AC1E4 /* ZylOfo-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "ZylOfo-Bridging-Header.h"; sourceTree = "<group>"; };
 		A48464271EF8BD5F000AC1E4 /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		A48464291EF90065000AC1E4 /* MyPinannotatiion.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyPinannotatiion.swift; sourceTree = "<group>"; };
@@ -53,6 +61,7 @@
 		796F2DE31EF686AA00CECCD2 = {
 			isa = PBXGroup;
 			children = (
+				A469FF5B1EFA56CC0089C580 /* CodeScan.bundle */,
 				796F2DEE1EF686AB00CECCD2 /* ZylOfo */,
 				796F2DED1EF686AB00CECCD2 /* Products */,
 				796F2E011EF6963400CECCD2 /* Frameworks */,
@@ -72,6 +81,9 @@
 			isa = PBXGroup;
 			children = (
 				796F2DEF1EF686AB00CECCD2 /* AppDelegate.swift */,
+				A469FF5F1EFA6EF20089C580 /* ColorHelper.swift */,
+				A469FF5D1EFA6DBB0089C580 /* InputViewController.swift */,
+				A469FF591EFA4F700089C580 /* ScanViewController.swift */,
 				7909282C1EF6CB1E00C7681D /* MenuController.swift */,
 				A48464291EF90065000AC1E4 /* MyPinannotatiion.swift */,
 				A48464271EF8BD5F000AC1E4 /* ViewController.swift */,
@@ -175,6 +187,7 @@
 				796F2DFA1EF686AB00CECCD2 /* LaunchScreen.storyboard in Resources */,
 				796F2DF71EF686AB00CECCD2 /* Assets.xcassets in Resources */,
 				796F2DF51EF686AB00CECCD2 /* Main.storyboard in Resources */,
+				A469FF5C1EFA56CC0089C580 /* CodeScan.bundle in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -236,8 +249,11 @@
 				A48464281EF8BD5F000AC1E4 /* ViewController.swift in Sources */,
 				7909282D1EF6CB1E00C7681D /* MenuController.swift in Sources */,
 				796F2E051EF6974100CECCD2 /* WebViewController.swift in Sources */,
+				A469FF601EFA6EF20089C580 /* ColorHelper.swift in Sources */,
+				A469FF5E1EFA6DBB0089C580 /* InputViewController.swift in Sources */,
 				A484642A1EF90065000AC1E4 /* MyPinannotatiion.swift in Sources */,
 				796F2DF01EF686AB00CECCD2 /* AppDelegate.swift in Sources */,
+				A469FF5A1EFA4F700089C580 /* ScanViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

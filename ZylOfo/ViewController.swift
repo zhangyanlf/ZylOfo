@@ -84,7 +84,7 @@ class ViewController: UIViewController,MAMapViewDelegate,AMapSearchDelegate,AMap
     }
     // MARK: - 大头针动画
     func pinAnimation() {
-        //坠落效果，y洲加位移
+        //坠落效果，y轴加位移
         let endFrame = pinView.frame
         
         pinView.frame = endFrame.offsetBy(dx: 0, dy: -15)
@@ -96,6 +96,13 @@ class ViewController: UIViewController,MAMapViewDelegate,AMapSearchDelegate,AMap
     }
     
     // MARK: - Map View Delegate
+    
+    /// 根据overlay生成对应的Renderer
+    ///
+    /// - Parameters:
+    ///   - mapView: mapView 地图View
+    ///   - overlay: overlay 指定的overlay
+    /// - Returns:  生成的覆盖物Renderer
     func mapView(_ mapView: MAMapView!, rendererFor overlay: MAOverlay!) -> MAOverlayRenderer! {
         if overlay is MAPolyline {
             pin.isLockedToScreen = false
@@ -111,6 +118,11 @@ class ViewController: UIViewController,MAMapViewDelegate,AMapSearchDelegate,AMap
         return nil
     }
     
+    /// 点击MAAnnotationView动作
+    ///
+    /// - Parameters:
+    ///   - mapView: mapView
+    ///   - view: 地图上黄车
     func mapView(_ mapView: MAMapView!, didSelect view: MAAnnotationView!) {
         print("点击了")
         
@@ -125,6 +137,11 @@ class ViewController: UIViewController,MAMapViewDelegate,AMapSearchDelegate,AMap
         
     }
     
+    ///  当mapView新添加annotation views时，调用此接口
+    ///
+    /// - Parameters:
+    ///   - mapView: mapView
+    ///   - views: 新添加的annotation views
     func mapView(_ mapView: MAMapView!, didAddAnnotationViews views: [Any]!) {
         let aViews = views as! [MAAnnotationView]
         
@@ -273,6 +290,7 @@ class ViewController: UIViewController,MAMapViewDelegate,AMapSearchDelegate,AMap
 //        let action = UIAlertAction(title: "ok", style: .default, handler: nil)
 //        ac.addAction(action)
 //        self.present(ac, animated: true, completion: nil)
+
         FTIndicator.setIndicatorStyle(.dark)
         FTIndicator.showNotification(with: #imageLiteral(resourceName: "clock"), title: hintTitle, message: hintSubTitle)
         

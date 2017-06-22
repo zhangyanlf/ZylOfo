@@ -12,5 +12,6 @@ pod 'AMapSearch'
 pod 'AMapNavi'
 pod 'AMapLocation'
 pod 'FTIndicator'
+pod 'swiftScan'
 
 end
