@@ -10,6 +10,7 @@ PODS:
   - AMapSearch (5.1.0):
     - AMapFoundation (~> 1.2)
   - APNumberPad (1.2.0)
+  - AVOSCloud (5.0.2)
   - FTIndicator (1.2.0):
     - FTIndicator/FTNotificationIndicator (= 1.2.0)
     - FTIndicator/FTProgressIndicator (= 1.2.0)
@@ -28,6 +29,7 @@ DEPENDENCIES:
   - AMapNavi
   - AMapSearch
   - APNumberPad
+  - AVOSCloud
   - FTIndicator
   - swiftScan
   - SwiftySound
@@ -41,12 +43,13 @@ SPEC CHECKSUMS:
   AMapNavi: d61087a4d00eca95fe75c329483bbb7529126525
   AMapSearch: d4c924b929f433968669721a07b4bd57736f5f2a
   APNumberPad: a63526db2db628824ae92e7124719e87e0f1c969
+  AVOSCloud: 01745f438fb9ef4f2cde2b992783a869cc1291e6
   FTIndicator: e1c035b99b8df1b1a40702b37cdc12fac5dd057c
   swiftScan: 55d3abf1d679615d2263de0ca44bebba4b11c56e
   SwiftySound: 4897b230859801982700bb08ec40fa000ea2e59a
   SwiftyTimer: 2efd74b060d69ad4f1496baf5bbedbe132125fcf
   SWRevealViewController: 6d3fd97f70112fd7cef9de14df4260eacce4c63a
 
-PODFILE CHECKSUM: a7bdfff94ba32002bd6c08b1d57cb2f58b40e715
+PODFILE CHECKSUM: aa34db03c614dde475d81923a2b90335550b3a0c
 
 COCOAPODS: 1.2.1

@@ -14,6 +14,11 @@
 			<key>isShown</key>
 			<false/>
 		</dict>
+		<key>AVOSCloud.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
 		<key>FTIndicator.xcscheme</key>
 		<dict>
 			<key>isShown</key>
@@ -52,17 +57,27 @@
 			<key>primary</key>
 			<true/>
 		</dict>
+		<key>59162C4CCAADA3A4A928407746DBCB58</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
 		<key>5C8D875EA6AA4410B964FD5D1AC1EFF6</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>6D7DEE565F345377AE75FA74B52C19E0</key>
+		<key>71E2C63C312B324E3E35EA89EA343BB0</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>8B175B24856B60388A76033DA5F1A51D</key>
+		<key>82117D57807A8B618E4B313A02FD7592</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>90BC4017AD4F4DEC6E8A9AADB937C7EA</key>
 		<dict>
 			<key>primary</key>
 			<true/>
@@ -72,17 +87,12 @@
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>C40D41C01881C3E027F760582C0EC940</key>
+		<key>C852EC9B680C5DCAA3A13BE5D041D3B0</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>D4A14C531091658D9E67AE35E5B253BD</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
-		<key>D6F295126C34035C22023F62F9E08109</key>
+		<key>EF3695951F9AB9E17D559C38BA4E75E4</key>
 		<dict>
 			<key>primary</key>
 			<true/>

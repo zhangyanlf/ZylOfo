@@ -957,13 +957,17 @@
                     </view>
                     <connections>
                         <outlet property="countDownLabel" destination="Nf1-fl-XUi" id="s6c-Kp-xMJ"/>
+                        <outlet property="label1st" destination="hWW-rC-4Ix" id="qp5-Kg-1gc"/>
+                        <outlet property="label2nd" destination="XcG-fY-Vn6" id="7I3-xt-evb"/>
+                        <outlet property="label3rd" destination="e1P-PT-tpL" id="5UJ-rQ-nzy"/>
+                        <outlet property="label4th" destination="Zhl-JF-Y1P" id="IT4-pO-e1V"/>
                         <outlet property="touchBtn" destination="mB7-fv-vhz" id="qxR-vH-5Ff"/>
                         <outlet property="voiceBtn" destination="I0t-Cx-J9I" id="KwM-5j-CxD"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="rBX-3C-nMX" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3828" y="-339"/>
+            <point key="canvasLocation" x="3934" y="-339"/>
         </scene>
     </scenes>
     <resources>

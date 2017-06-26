@@ -16,5 +16,6 @@ pod 'swiftScan'
 pod 'APNumberPad'
 pod 'SwiftyTimer'
 pod 'SwiftySound'
+pod 'AVOSCloud'    
 
 end

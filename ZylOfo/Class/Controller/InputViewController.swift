@@ -86,6 +86,7 @@ class InputViewController: UIViewController,APNumberPadDelegate,UITextFieldDeleg
     func numberPad(_ numberPad: APNumberPad, functionButtonAction functionButton: UIButton, textInput: UIResponder) {
         print("点击了")
         if !inPutTextFlied.text!.isEmpty {
+            
             performSegue(withIdentifier: "showPassSode", sender: self)
         }
     }
@@ -116,6 +117,32 @@ class InputViewController: UIViewController,APNumberPadDelegate,UITextFieldDeleg
         
     }
     
+    
+     // MARK: - Navigation
+     
+     // In a storyboard-based application, you will often want to do a little preparation before navigation
+     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+     // Get the new view controller using segue.destinationViewController.
+     // Pass the selected object to the new view controller.
+        if segue.identifier == "showPassSode" {
+            let destVC = segue.destination as! ShowPassCodeViewController
+            let code = inPutTextFlied.text!
+            
+            destVC.code = code
+            NetworkHelper.getPass(code: code, completion: { (pass) in
+                if let pass = pass {
+                    //"9999" -> ["9", "9", "9", "9"]
+                    destVC.passArray = pass.characters.map{
+                        return $0.description
+                    }
+                    
+                } else {
+                    print("无此车牌")
+                }
+            })
+            
+        }
+     }
     
     
 

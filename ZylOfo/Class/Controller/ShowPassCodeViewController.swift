@@ -12,8 +12,34 @@ import SwiftySound
 
 class ShowPassCodeViewController: UIViewController {
 
+    @IBOutlet weak var label1st: MyPreviewLabel!
+    
+    @IBOutlet weak var label2nd: MyPreviewLabel!
+    
+    @IBOutlet weak var label3rd: MyPreviewLabel!
+    
+    
+    @IBOutlet weak var label4th: MyPreviewLabel!
+    
+    
     var isTouchOn = false
     var isVoiceOn = true
+    var code = ""
+//    [8, 4, 5, 6]
+    var passArray: [String] = []{
+        
+        willSet{
+            
+        }
+        //属性监视器 
+        didSet{
+            self.label1st.text = passArray[0]
+            self.label2nd.text = passArray[1]
+            self.label3rd.text = passArray[2]
+            self.label4th.text = passArray[3]
+        }
+    }
+    
     let defaults = UserDefaults.standard
     var timer : Timer!
     

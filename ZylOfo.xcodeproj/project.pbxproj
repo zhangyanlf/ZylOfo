@@ -38,6 +38,7 @@
 		A497F5A01EFB9395003445BA /* 您的解锁码为_D.m4a in Resources */ = {isa = PBXBuildFile; fileRef = A497F5911EFB9395003445BA /* 您的解锁码为_D.m4a */; };
 		A497F5A11EFB9395003445BA /* 骑行结束_D.m4a in Resources */ = {isa = PBXBuildFile; fileRef = A497F5921EFB9395003445BA /* 骑行结束_D.m4a */; };
 		A497F5A21EFB9395003445BA /* 骑行结束_LH.m4a in Resources */ = {isa = PBXBuildFile; fileRef = A497F5931EFB9395003445BA /* 骑行结束_LH.m4a */; };
+		A4E573C51EFD133400146E63 /* NetworkHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4E573C41EFD133400146E63 /* NetworkHelper.swift */; };
 		F0A291DF483F36642AA05956 /* Pods_ZylOfo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D89676A0F81878BAC1308FE5 /* Pods_ZylOfo.framework */; };
 /* End PBXBuildFile section */
 
@@ -77,6 +78,7 @@
 		A497F5911EFB9395003445BA /* 您的解锁码为_D.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = "您的解锁码为_D.m4a"; sourceTree = "<group>"; };
 		A497F5921EFB9395003445BA /* 骑行结束_D.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = "骑行结束_D.m4a"; sourceTree = "<group>"; };
 		A497F5931EFB9395003445BA /* 骑行结束_LH.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = "骑行结束_LH.m4a"; sourceTree = "<group>"; };
+		A4E573C41EFD133400146E63 /* NetworkHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkHelper.swift; sourceTree = "<group>"; };
 		D89676A0F81878BAC1308FE5 /* Pods_ZylOfo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ZylOfo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		DEC9996358B73465AFF93DA3 /* Pods-ZylOfo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ZylOfo.release.xcconfig"; path = "Pods/Target Support Files/Pods-ZylOfo/Pods-ZylOfo.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -165,6 +167,7 @@
 				A497F5581EFB9114003445BA /* ColorHelper.swift */,
 				A497F5591EFB9114003445BA /* MyPinannotatiion.swift */,
 				A497F55A1EFB9114003445BA /* UIViewHelper.swift */,
+				A4E573C41EFD133400146E63 /* NetworkHelper.swift */,
 			);
 			path = expandTools;
 			sourceTree = "<group>";
@@ -359,6 +362,7 @@
 				A497F5711EFB9114003445BA /* WebViewController.swift in Sources */,
 				A497F5731EFB9114003445BA /* MyPinannotatiion.swift in Sources */,
 				A497F56D1EFB9114003445BA /* MenuController.swift in Sources */,
+				A4E573C51EFD133400146E63 /* NetworkHelper.swift in Sources */,
 				A497F56C1EFB9114003445BA /* InputViewController.swift in Sources */,
 				A497F5741EFB9114003445BA /* UIViewHelper.swift in Sources */,
 				A497F56F1EFB9114003445BA /* ShowPassCodeViewController.swift in Sources */,
